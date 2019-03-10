@@ -1,17 +1,26 @@
 import Typography from "typography"
-import Wordpress2016 from "typography-theme-wordpress-2016"
+import doelgerTheme from 'typography-theme-doelger'
 
-Wordpress2016.overrideThemeStyles = () => {
+doelgerTheme.overrideThemeStyles = ({ rhythm }) => {
+  const linkColor = "#f44336";
+
   return {
     "a.gatsby-resp-image-link": {
       boxShadow: `none`,
     },
+    "a": {
+      color: linkColor,
+      backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, ${linkColor} 1px, ${linkColor} 2px, rgba(0, 0, 0, 0) 2px)`,
+    },
+    "blockquote": {
+      borderLeft: `${rhythm(6 / 16)} solid ${linkColor}`,
+    }
   }
 }
 
-delete Wordpress2016.googleFonts
+delete doelgerTheme.googleFonts
 
-const typography = new Typography(Wordpress2016)
+const typography = new Typography(doelgerTheme)
 
 // Hot reload typography in development.
 if (process.env.NODE_ENV !== `production`) {

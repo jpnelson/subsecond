@@ -30,10 +30,10 @@
     "react-dom": "^16.8.4",
     "react-helmet": "^5.2.0",
     "react-typography": "^0.16.19",
-    "typeface-merriweather": "0.0.72",
-    "typeface-montserrat": "0.0.54",
+    "typeface-arvo": "0.0.72",
+    "typeface-cabin": "0.0.72",
     "typography": "^0.16.19",
-    "typography-theme-wordpress-2016": "^0.16.19"
+    "typography-theme-doelger": "^0.16.19"
   },
   "devDependencies": {
     "prettier": "^1.16.4"
