@@ -66,8 +66,6 @@ Either of these questions can produce a limit that should be fairly easy to agre
 
 # Apdex
 
-![Apdex logo](./apdex.jpg)
-
 [Apdex](http://apdex.org/overview.html) is another useful, "meta metric" that can be used to protect your performance and measure it at a high level.
 
 In the context of meaningful metrics however, there are two things that I would warn against in the usage of Apdex.
