@@ -107,5 +107,11 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint: 'https://makeitfast.us20.list-manage.com/subscribe/post?u=ae54d34b746ba5e2c0fea3960&amp;id=00f96ff246',
+      },
+    },
   ],
 }

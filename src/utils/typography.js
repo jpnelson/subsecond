@@ -1,8 +1,9 @@
 import Typography from "typography"
 import doelgerTheme from 'typography-theme-doelger'
+import colors from './colors';
 
 doelgerTheme.overrideThemeStyles = ({ rhythm }) => {
-  const linkColor = "#f44336";
+  const linkColor = colors.main;
 
   return {
     "a.gatsby-resp-image-link": {
