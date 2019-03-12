@@ -40,7 +40,7 @@ class Mailchimp extends React.Component {
             }
         `}</style>
         <div style={{width: '60%'}}>
-            <form onSubmit={this.onSubmit}>
+            <form onSubmit={this.onSubmit} style={{margin: 0}}>
                 <p>
                     Get emails from me about once a month when I post new content,
                     focusing on performance, front end technology, and engineering.
@@ -71,23 +71,23 @@ class Mailchimp extends React.Component {
             </form>
         </div>
         <div style={{width: '40%'}}>
-            <img style={{padding: rhythm(0.5)}} src={newsletter} alt="Person standing next to a giant email"></img>
+            <img style={{padding: rhythm(0.5), margin: 0}} src={newsletter} alt="Person standing next to a giant email"></img>
         </div>
     </div>
     )
   }
 
   onSubmit = async e => {
-    e.preventDefault()
-    this.setState({ loading: true })
-    const result = await addToMailchimp(this.state.email)
+    e.preventDefault();
+    this.setState({ loading: true });
+    const result = await addToMailchimp(this.state.email);
     this.setState({
       loading: false,
       message:
         result.result === "success"
           ? `You're set! You'll start getting the newsletter ✨`
           : `Something went wrong. Are you subscribed already? Email josh at makeitfast.dev and I can help sort this out, or try a new email.`,
-    })
+    });
   }
 }
 
