@@ -9,6 +9,9 @@ doelgerTheme.overrideThemeStyles = ({ rhythm }) => {
     "a.gatsby-resp-image-link": {
       boxShadow: `none`,
     },
+    "a.anchor": {
+      backgroundImage: 'none',
+    },
     "a": {
       color: linkColor,
       backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, ${linkColor} 1px, ${linkColor} 2px, rgba(0, 0, 0, 0) 2px)`,
