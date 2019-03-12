@@ -86,7 +86,7 @@ class Mailchimp extends React.Component {
       message:
         result.result === "success"
           ? `You're set! You'll start getting the newsletter ✨`
-          : `Something went wrong. Are you subscribed already? Email josh at makeitfast.dev and I can help sort this out, or try a new email.`,
+          : `Something went wrong. Are you subscribed already? Email josh at subsecond.dev and I can help sort this out, or try a new email.`,
     });
   }
 }

@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Make it fast`,
+    title: `Sub second`,
     author: `Joshua Nelson`,
     description: `A blog dedicated to the art, science, and dark magic of front end performance`,
-    siteUrl: `https://makeitfast.dev/`,
+    siteUrl: `https://subsecond.dev/`,
     social: {
       twitter: `nelsonjoshpaul`,
     },
@@ -91,8 +91,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Make it fast`,
-        short_name: `makeitfast`,
+        name: `Sub second`,
+        short_name: `subsecond`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `pink`,
@@ -110,7 +110,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-mailchimp',
       options: {
-        endpoint: 'https://makeitfast.us20.list-manage.com/subscribe/post?u=ae54d34b746ba5e2c0fea3960&amp;id=00f96ff246',
+        endpoint: 'https://subsecond.us20.list-manage.com/subscribe/post?u=ae54d34b746ba5e2c0fea3960&amp;id=00f96ff246',
       },
     },
   ],
