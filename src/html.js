@@ -15,15 +15,6 @@ export default class HTML extends React.Component {
             g.o.observe({entryTypes:['longtask']})}}();          
           `}}>
           </script>
-          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135893058-1"></script>
-          <script dangerouslySetInnerHTML={{__html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'UA-135893058-1');
-          `}}>
-          </script>
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
           <meta
@@ -43,6 +34,15 @@ export default class HTML extends React.Component {
             dangerouslySetInnerHTML={{ __html: props.body }}
           />
           {props.postBodyComponents}
+          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135893058-1"></script>
+          <script dangerouslySetInnerHTML={{__html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-135893058-1');
+          `}}>
+          </script>
         </body>
       </html>
     );
