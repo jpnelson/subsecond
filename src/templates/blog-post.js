@@ -13,7 +13,7 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = this.props.data.site.siteMetadata.title
     const { previous, next } = this.props.pageContext
 
-    const isEmail = URLSearchParams ? (new URLSearchParams(window.location.search)).has('email') : false;
+    const isEmail = (typeof window !== 'undefined') && window.URLSearchParams ? (new window.URLSearchParams(window.location.search)).has('email') : false;
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
