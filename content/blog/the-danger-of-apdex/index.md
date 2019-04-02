@@ -9,6 +9,7 @@ I've applied for my driver's license twice now – once at a place called the **
 One of the other differences between these two places is on your way out of the RMS, you are presented with a little kiosk like the one below with some faces on it. You are asked to rate your experience, and describe how you felt about it by pressing one of the buttons. This lets the service measure how happy people are, and adjust when this is off.
 
 ![happy or not kiosk](./happy-or-not.jpg)
+*From happyornot.com*
 
 This is what Apdex is trying to do for websites. Sometimes we explicitly ask what users think (Through CSAT, NPS, and other questions), and sometimes we calculate it from other things, but what we really want to measure is, "How happy are our users with how fast our site is?".
 
