@@ -1,14 +1,14 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
+import React from "react";
+import { Link, graphql } from "gatsby";
 
-import Bio from "../components/bio"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
-import colors from "../utils/colors"
+import Bio from "../components/bio";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import { rhythm } from "../utils/typography";
+import colors from "../utils/colors";
 import Mailchimp from "../components/mailchimp";
 
-function Post ({ title, slug, description, date, isNew }) {
+function Post({ title, slug, description, date, isNew }) {
   return (
     <div>
       <h3
@@ -23,36 +23,41 @@ function Post ({ title, slug, description, date, isNew }) {
       <small>{date}</small>
       {isNew ? (
         <React.Fragment>
-          {''}
+          {""}
           <small
             style={{
               padding: rhythm(0.1),
               border: `1px solid ${colors.main}`,
-              textTransform: 'uppercase',
+              textTransform: "uppercase",
               marginLeft: rhythm(0.25),
               color: colors.main,
-              borderRadius: '5px',
+              borderRadius: "5px",
             }}
           >
-            <span role="img" aria-label="Sparkle emoji">✨</span>New post<span role="img" aria-label="Sparkle emoji">✨</span>
+            <span role="img" aria-label="Sparkle emoji">
+              ✨
+            </span>
+            New post
+            <span role="img" aria-label="Sparkle emoji">
+              ✨
+            </span>
           </small>
         </React.Fragment>
-        ) : null
-      }
+      ) : null}
       <p
         dangerouslySetInnerHTML={{
           __html: description,
         }}
       />
     </div>
-  )
+  );
 }
 
 class BlogIndex extends React.Component {
   render() {
-    const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
-    const posts = data.allMarkdownRemark.edges
+    const { data } = this.props;
+    const siteTitle = data.site.siteMetadata.title;
+    const posts = data.allMarkdownRemark.edges;
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -63,23 +68,32 @@ class BlogIndex extends React.Component {
         <Bio />
         <Mailchimp />
 
-        {posts.map(({ node }, index) => {
-          return <Post
-            key={node.fields.slug}
-            slug={node.fields.slug}
-            date={node.frontmatter.date}
-            description={node.frontmatter.description || node.excerpt}
-            title={node.frontmatter.title || node.fields.slug}
-            isNew={index === 0}
-          />
+        <div>
+          <h2>
+            <Link to="/projects">See my projects</Link>
+          </h2>
+          <p>I create projects for learning and fun. Check them out.</p>
+        </div>
+        <hr />
 
+        {posts.map(({ node }, index) => {
+          return (
+            <Post
+              key={node.fields.slug}
+              slug={node.fields.slug}
+              date={node.frontmatter.date}
+              description={node.frontmatter.description || node.excerpt}
+              title={node.frontmatter.title || node.fields.slug}
+              isNew={index === 0}
+            />
+          );
         })}
       </Layout>
-    )
+    );
   }
 }
 
-export default BlogIndex
+export default BlogIndex;
 
 export const pageQuery = graphql`
   query {
@@ -104,4 +118,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

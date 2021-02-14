@@ -1,6 +1,6 @@
-import Typography from "typography"
-import doelgerTheme from 'typography-theme-doelger'
-import colors from './colors';
+import Typography from "typography";
+import doelgerTheme from "typography-theme-doelger";
+import colors from "./colors";
 
 doelgerTheme.overrideThemeStyles = ({ rhythm }) => {
   const linkColor = colors.main;
@@ -10,27 +10,27 @@ doelgerTheme.overrideThemeStyles = ({ rhythm }) => {
       boxShadow: `none`,
     },
     "a.anchor": {
-      backgroundImage: 'none',
+      backgroundImage: "none",
     },
-    "a": {
+    a: {
       color: linkColor,
       backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, ${linkColor} 1px, ${linkColor} 2px, rgba(0, 0, 0, 0) 2px)`,
     },
-    "blockquote": {
+    blockquote: {
       borderLeft: `${rhythm(6 / 16)} solid ${linkColor}`,
-    }
-  }
-}
+    },
+  };
+};
 
-delete doelgerTheme.googleFonts
+delete doelgerTheme.googleFonts;
 
-const typography = new Typography(doelgerTheme)
+const typography = new Typography(doelgerTheme);
 
 // Hot reload typography in development.
 if (process.env.NODE_ENV !== `production`) {
-  typography.injectStyles()
+  typography.injectStyles();
 }
 
-export default typography
-export const rhythm = typography.rhythm
-export const scale = typography.scale
+export default typography;
+export const rhythm = typography.rhythm;
+export const scale = typography.scale;

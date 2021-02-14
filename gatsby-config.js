@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Sub second`,
     author: `Joshua Nelson`,
-    description: `A blog dedicated to the art, science, and dark magic of front end performance`,
+    description: `Josh Nelson's personal blog: dedicated to the art, science, and dark magic of front end performance. And other things.`,
     siteUrl: `https://subsecond.dev/`,
     social: {
       twitter: `nelsonjoshpaul`,
@@ -40,8 +40,8 @@ module.exports = {
               ratio: 1.77, // Optional: Defaults to 16/9 = 1.77
               height: 400, // Optional: Overrides optional.ratio
               related: false, //Optional: Will remove related videos from the end of an embedded YouTube video.
-              noIframeBorder: true //Optional: Disable insertion of <style> border: 0
-            }
+              noIframeBorder: true, //Optional: Disable insertion of <style> border: 0
+            },
           },
           {
             resolve: `gatsby-remark-responsive-iframe`,
@@ -68,6 +68,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `pink`,
         display: `minimal-ui`,
+        icons: [],
       },
     },
     `gatsby-plugin-react-helmet`,
@@ -78,10 +79,11 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-mailchimp',
+      resolve: "gatsby-plugin-mailchimp",
       options: {
-        endpoint: 'https://subsecond.us20.list-manage.com/subscribe/post?u=ae54d34b746ba5e2c0fea3960&amp;id=00f96ff246',
+        endpoint:
+          "https://subsecond.us20.list-manage.com/subscribe/post?u=ae54d34b746ba5e2c0fea3960&amp;id=00f96ff246",
       },
     },
   ],
-}
+};

@@ -5,18 +5,18 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
-import React from "react"
-import { StaticQuery, graphql } from "gatsby"
-import Image from "gatsby-image"
+import React from "react";
+import { StaticQuery, graphql } from "gatsby";
+import Image from "gatsby-image";
 
-import { rhythm } from "../utils/typography"
+import { rhythm } from "../utils/typography";
 
 function Bio() {
   return (
     <StaticQuery
       query={bioQuery}
       render={data => {
-        const { author, social } = data.site.siteMetadata
+        const { author, social } = data.site.siteMetadata;
         return (
           <div
             style={{
@@ -38,15 +38,15 @@ function Bio() {
               }}
             />
             <p>
-              Written by <a href={`https://twitter.com/${social.twitter}`}>
-                {author}
-              </a>, a developer who wants to make the web faster for everyone.
+              Written by{" "}
+              <a href={`https://twitter.com/${social.twitter}`}>{author}</a>, a
+              developer who wants to make the web faster for everyone.
             </p>
           </div>
-        )
+        );
       }}
     />
-  )
+  );
 }
 
 const bioQuery = graphql`
@@ -67,6 +67,6 @@ const bioQuery = graphql`
       }
     }
   }
-`
+`;
 
-export default Bio
+export default Bio;

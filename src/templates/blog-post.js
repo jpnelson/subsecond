@@ -1,22 +1,25 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
+import React from "react";
+import { Link, graphql } from "gatsby";
 
-import Bio from "../components/bio"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { rhythm, scale } from "../utils/typography"
+import Bio from "../components/bio";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import { rhythm, scale } from "../utils/typography";
 import Mailchimp from "../components/mailchimp";
 
 class BlogPostTemplate extends React.Component {
   render() {
-    const post = this.props.data.markdownRemark
-    const siteTitle = this.props.data.site.siteMetadata.title
-    const { previous, next } = this.props.pageContext
+    const post = this.props.data.markdownRemark;
+    const siteTitle = this.props.data.site.siteMetadata.title;
+    const { previous, next } = this.props.pageContext;
 
-    const isEmail = (typeof window !== 'undefined') && window.URLSearchParams ? (new window.URLSearchParams(window.location.search)).has('email') : false;
+    const isEmail =
+      typeof window !== "undefined" && window.URLSearchParams
+        ? new window.URLSearchParams(window.location.search).has("email")
+        : false;
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout location={this.props.location} title={siteTitle} width={36}>
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
@@ -65,16 +68,15 @@ class BlogPostTemplate extends React.Component {
                   </Link>
                 )}
               </li>
-          
-          </ul>
-        </React.Fragment>) : null} 
-
+            </ul>
+          </React.Fragment>
+        ) : null}
       </Layout>
-    )
+    );
   }
 }
 
-export default BlogPostTemplate
+export default BlogPostTemplate;
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
@@ -95,4 +97,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
