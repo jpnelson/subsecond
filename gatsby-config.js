@@ -59,18 +59,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-feed`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `Sub second`,
-        short_name: `subsecond`,
-        start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `pink`,
-        display: `minimal-ui`,
-        icons: [],
-      },
-    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-typography`,
