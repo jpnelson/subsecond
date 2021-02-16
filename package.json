@@ -38,7 +38,7 @@
     "typography-theme-doelger": "^0.16.19"
   },
   "devDependencies": {
-    "prettier": "^1.16.4"
+    "prettier": "^1.19.1"
   },
   "homepage": "https://subsecond.dev",
   "keywords": [
