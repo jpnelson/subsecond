@@ -14,7 +14,7 @@ Maybe you're thinking that now we need to actually fix performance. This is undo
 
 A natural follow up question might be, how long will it take to fix those performance issues?
 
-This is *not* the right question to be asking. We're in it for the long run – performance is a cultural change we need to make, not a one off effort that we can do once.
+This is _not_ the right question to be asking. We're in it for the long run – performance is a cultural change we need to make, not a one off effort that we can do once.
 
 # The planning phase
 
@@ -62,7 +62,7 @@ or
 
 Either of these questions can produce a limit that should be fairly easy to agree to – if your competitor is beating you, a sensible goal might be to beat your competitor!
 
-[performancebudget.io](performancebudget.io) is a useful tool for choosing a bundle size metric based on page load time – but remember from the previous post, total bundle size may not correlate with the real user experience, if heaving caching or code splitting is happening. It's important to measure real user experiences too, and it's good to pick a budget based on a metric more like that.
+[performancebudget.io](https://performancebudget.io) is a useful tool for choosing a bundle size metric based on page load time – but remember from the previous post, total bundle size may not correlate with the real user experience, if heaving caching or code splitting is happening. It's important to measure real user experiences too, and it's good to pick a budget based on a metric more like that.
 
 # Apdex
 
@@ -84,6 +84,6 @@ With this in mind, Apdex can be a useful tool for protecting performance. It can
 
 ---
 
-Over the course of this blog series, we have learnt to measure *real* user experiences, and pick the right metric to do that. Quickly check that the metric you have chosen is being triggered when in a meaningful state.
+Over the course of this blog series, we have learnt to measure _real_ user experiences, and pick the right metric to do that. Quickly check that the metric you have chosen is being triggered when in a meaningful state.
 
 Ultimately, for me, dollars aren't inspiring – but making the internet better for everyone, and enabling the open exchange of information for the world, is an inspiring goal. Meaningful metrics are an important step to this goal. Let's make the internet better for everyone! ✨
