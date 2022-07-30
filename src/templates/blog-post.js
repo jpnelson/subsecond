@@ -5,7 +5,7 @@ import Bio from "../components/bio";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { rhythm, scale } from "../utils/typography";
-import Mailchimp from "../components/mailchimp";
+import Subscribe from "../components/subscribe";
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -44,7 +44,7 @@ class BlogPostTemplate extends React.Component {
         <Bio />
         {!isEmail ? (
           <React.Fragment>
-            <Mailchimp />
+            <Subscribe />
             <ul
               style={{
                 display: `flex`,

@@ -6,7 +6,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { rhythm } from "../utils/typography";
 import colors from "../utils/colors";
-import Mailchimp from "../components/mailchimp";
+import Subscribe from "../components/subscribe";
 
 function Post({ title, slug, description, date, isNew }) {
   return (
@@ -66,7 +66,7 @@ class BlogIndex extends React.Component {
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
         <Bio />
-        <Mailchimp />
+        <Subscribe />
 
         <div>
           <h2>

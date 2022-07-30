@@ -14,12 +14,7 @@ function Project({ title, link, description }) {
           marginBottom: rhythm(1 / 4),
         }}
       >
-        <a
-          target="_blank"
-          href={link}
-          style={{ boxShadow: `none` }}
-          target="_blank"
-        >
+        <a target="_blank" href={link} style={{ boxShadow: `none` }}>
           {title}
         </a>
       </h3>
@@ -46,7 +41,7 @@ class Projects extends React.Component {
           </h2>
           <p>I write as well, check out my posts.</p>
         </div>
-        <hr />
+        <h2>Projets</h2>
         <Project
           title="⌨️ bigtyper.com"
           link="http://bigtyper.com"
@@ -67,7 +62,19 @@ class Projects extends React.Component {
           link="https://atlaskit.atlassian.com/"
           description="Worked on the team that created Atlaskit, an accessible and beautiful component library written in React."
         />
-        <hr />
+        <Project
+          title="⚔️ wpt-gauntlet"
+          link="https://github.com/jpnelson/wpt-gauntlet"
+          description="A tool for benchmarking webpages consistently, using the webpagetest API"
+        />
+
+        <h2>Open source contributions</h2>
+        <ul>
+          <li>
+            <a href="https://github.com/callstack/linaria">Linaria</a>, a CSS in
+            JS framework with static style extraction
+          </li>
+        </ul>
         <h2>Speaking engagements</h2>
         <p>
           I love teaching and mentoring people, and speaking is one of the ways
