@@ -29,7 +29,7 @@
     "gatsby-transformer-remark": "^5.0.0",
     "gatsby-transformer-sharp": "^4.0.0",
     "gatsby-transformer-sqip": "^4.0.0",
-    "prismjs": "^1.28.0",
+    "prismjs": "^1.27.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-helmet": "^5.2.0",
