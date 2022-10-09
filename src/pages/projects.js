@@ -41,7 +41,7 @@ class Projects extends React.Component {
           </h2>
           <p>I write as well, check out my posts.</p>
         </div>
-        <h2>Projets</h2>
+        <h2>Projects</h2>
         <Project
           title="⌨️ bigtyper.com"
           link="http://bigtyper.com"
@@ -67,6 +67,14 @@ class Projects extends React.Component {
           link="https://github.com/jpnelson/wpt-gauntlet"
           description="A tool for benchmarking webpages consistently, using the webpagetest API"
         />
+        <h2>More by me</h2>
+        <ul>
+          <li>
+            <a href="https://medium.com/airbnb-engineering/measuring-web-performance-at-airbnb-122da8d3ea3f">
+              Measuring web performance at Airbnb
+            </a>
+          </li>
+        </ul>
 
         <h2>Open source contributions</h2>
         <ul>
@@ -162,7 +170,7 @@ class Projects extends React.Component {
             See the talk slides and notes
           </a>
         </p>
-        <h3 id="other-past-engagements">Other past engagements</h3>
+        <h3 id="other-past-engagements">Other engagements</h3>
         <ul>
           <li>
             <a

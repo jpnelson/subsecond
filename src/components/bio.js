@@ -40,7 +40,8 @@ function Bio() {
             <p>
               Written by{" "}
               <a href={`https://twitter.com/${social.twitter}`}>{author}</a>, a
-              developer who wants to make the web faster for everyone.
+              developer at Airbnb who wants to make the web faster for everyone.
+              Opinions expressed are my own.
             </p>
           </div>
         );
